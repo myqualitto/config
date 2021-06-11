@@ -3,6 +3,6 @@ spring:
       url: jdbc:mysql://localhost:3306/usersrv
       username: usersrv
       password: usersrv
-department:
-   service:
+services:
+   department:
       endpoint: http://localhost:9091/departments/
