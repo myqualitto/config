@@ -5,4 +5,4 @@ spring:
       password: usersrv
 services:
    department:
-      endpoint: http://192.168.64.2/departments/
+      endpoint: http://192.168.64.3/departments/
