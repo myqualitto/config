@@ -3,8 +3,6 @@ spring:
     admin:
       client:
         url: http://localhost:8082    
-  profiles:
-    active: dev
 
 eureka:
   client:
@@ -21,6 +19,3 @@ management:
     web:
       exposure:
         include: '*'
-
-test:
-  message: Sample Message From Application Yaml Auto Refresh Check2
