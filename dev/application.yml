@@ -1,2 +1,24 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8082    
+  profiles:
+    active: dev
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
 test:
   message: Sample Message From Application Yaml Auto Refresh Check2
