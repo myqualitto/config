@@ -7,8 +7,8 @@ spring:
                enabled: true
             -  name: about
                enabled: false
-      monitor:
-         default-timeout: 60000
-         status-interval: 15000
-         status-lifetime: 150000
-         defaultRetries: 5
+         monitor:
+            default-timeout: 60000
+            status-interval: 15000
+            status-lifetime: 150000
+            defaultRetries: 5
