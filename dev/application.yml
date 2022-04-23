@@ -2,14 +2,14 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:8082    
+        url: http://localhost:8083    
 
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://localhost:8084/eureka
+      defaultZone: http://localhost:8081/eureka
   instance:
     prefer-ip-address: true
     hostname: localhost
