@@ -1,6 +1,6 @@
 spring:
-  jmx:
-    enabled: true
+   jmx:
+      enabled: true
    boot:
       admin:
          client:
@@ -10,22 +10,21 @@ spring:
                      environment: ${spring.profiles.active}
 logging:
    file:
-      name: '/var/log/${spring.application.name}.log'
+      name: /var/log/${spring.application.name}.log
    pattern:
-      file: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID}){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx'
-
+      file: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID}){magenta} %clr(---){faint} %clr([%15.15t]){faint}
+         %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx'
 eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    serviceUrl:
-      defaultZone: http://localhost:8081/eureka
-  instance:
-    prefer-ip-address: true
-    hostname: localhost
-
+   client:
+      register-with-eureka: true
+      fetch-registry: true
+      serviceUrl:
+         defaultZone: http://localhost:8081/eureka
+   instance:
+      prefer-ip-address: true
+      hostname: localhost
 management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+   endpoints:
+      web:
+         exposure:
+            include: '*'
