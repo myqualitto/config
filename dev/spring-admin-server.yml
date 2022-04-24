@@ -2,11 +2,18 @@ spring:
    boot:
       admin:
          ui:
+            title: Grow DNA Apps Admin
+            brand: Grow DNA Apps Admin
+            available-languages: en,de
+            external-views:
+            -  label: 🚀
+               url: http://growdna.com
+               order: 2000
             view-settings:
             -  name: journal
                enabled: true
             -  name: about
-               enabled: false
+               enabled: true
          monitor:
             default-timeout: 60000
             status-interval: 15000
