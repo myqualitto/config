@@ -31,3 +31,5 @@ management:
    trace:
       http:
          enabled: true
+springdoc:
+   show-actuator: true
